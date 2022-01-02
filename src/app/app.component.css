@@ -1,0 +1,26 @@
+.header{
+  background-color: #211A1D;
+  padding: 10px;
+}
+.container{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.nav{
+  background-color: #46373d;
+}
+.link{
+  color:#fff;
+  text-decoration: none;
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 30px;
+}
+.link:hover{
+  color:#d1d1d1;
+}
+.menu{
+  font-size: 25px;
+  margin-right: 20px;
+}
