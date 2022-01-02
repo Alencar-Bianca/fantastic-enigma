@@ -24,3 +24,11 @@
   font-size: 25px;
   margin-right: 20px;
 }
+footer{
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #362b30;
+  padding: 5px;
+}

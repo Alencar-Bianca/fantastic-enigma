@@ -14,11 +14,13 @@ import { ProductsComponent } from './products/products.component';
     HomeComponent,
     ContactComponent,
     FormComponent,
-    ProductsComponent
+    ProductsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
