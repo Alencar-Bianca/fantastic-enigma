@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { TaskService } from './../tasks/shared/task.service';
+import{Task} from '../../app/tasks/shared/task';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-products',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+produto: Task[] =[];
 
-  constructor() { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
+
+    this.produto = this.taskService.getAll();
   }
 
 }

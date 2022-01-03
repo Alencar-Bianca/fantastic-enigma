@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
 import { ProductsComponent } from './products/products.component';
+import { ProdutoItemComponent } from './produto-item/produto-item.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,12 @@ import { ProductsComponent } from './products/products.component';
     ContactComponent,
     FormComponent,
     ProductsComponent,
-    
+    ProdutoItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
 
   ],
   providers: [],

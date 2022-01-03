@@ -1,1 +1,15 @@
-<p>form works!</p>
+<p>{{title}}</p>
+
+<section>
+  <form (ngSubmit)="onSubmit()" >
+    <div>
+      <label >Nome</label>
+      <input [(ngModel)]="task.nome" name="nome" rows="5" ngForm #myForm="ngForm">
+      <label >Preco</label>
+      <input [(ngModel)]="task.preco" name="preco" rows="5" ngForm #myForm="ngForm">
+    </div>
+
+    <button type="submit">Salvar</button>
+    <button type="button" [routerLink]="['/products']" >Cancelar</button>
+  </form>
+</section>

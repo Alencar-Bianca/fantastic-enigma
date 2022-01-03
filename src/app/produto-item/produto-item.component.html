@@ -1,0 +1,8 @@
+  <div [innerHTML]="task.nome" ></div>
+  <div [innerHTML]="task.preco" ></div>
+  <div>
+    <button type="button"[routerLink]="['/edit', task.id]"> Alterar</button>
+  </div>
+  <div>
+    <button type="button"  (click)="remover(task)"> Excluir</button>
+  </div>

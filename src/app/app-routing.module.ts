@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: '', component:HomeComponent, pathMatch: 'full'},
   {path: 'home', component:HomeComponent},
   {path: 'contact', component:ContactComponent},
-  {path: 'form', component:FormComponent},
+  {path: 'edit/:id', component:FormComponent},
+  {path: 'new', component:FormComponent},
   {path: 'products', component:ProductsComponent},
 ];
 

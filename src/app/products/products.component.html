@@ -1,1 +1,7 @@
-<p>products works!</p>
+<ul>
+  <li  *ngFor="let task of produto">
+    <app-produto-item [task]="task"></app-produto-item>
+  </li>
+</ul>
+<button type="button" [routerLink]="['/new']" >Nova Tarefa</button>
+
